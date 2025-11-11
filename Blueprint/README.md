@@ -1,7 +1,7 @@
 # Blueprint Project 
 
 ## Overview
-This Java project simulates a building design system, inspired by an Apple AppStore-like blueprint framework.  
+This Java project simulates a building design system.
 It demonstrates object-oriented programming (OOP) principles such as **composition**, **encapsulation**, and **overriding methods**, while using only **primitive arrays** to manage collections.
 
 The project includes three main classes:
@@ -9,7 +9,6 @@ The project includes three main classes:
 - `Floor` – Represents a floor of a building, containing multiple `Unit`s. Handles capacity limits and ensures that no floor exceeds its maximum area.
 - `Blueprint` – Represents the entire building blueprint, composed of multiple `Floor` instances. Tracks completion percentage based on added floor plans.
 
-JUnit tests are provided to verify functionality and serve as usage examples.
 
 ---
 
@@ -29,22 +28,3 @@ JUnit tests are provided to verify functionality and serve as usage examples.
 
 ---
 
-## How to Run
-1. Clone the repository:
-```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
-Navigate to the Blueprint folder:
-
-bash
-Copy code
-cd Blueprint
-Compile the source code:
-
-bash
-Copy code
-javac -d bin src/model/*.java junit_tests/*.java
-Run the JUnit tests:
-
-bash
-Copy code
-java -cp bin org.junit.runner.JUnitCore junit_tests.StarterTests
